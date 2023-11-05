@@ -1,0 +1,265 @@
+:root {
+    --primary-color: lightblue;
+    --secondary-color: hotpink;
+    --dark-color: darkblue;
+    --light-color: lightgray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    background-color: white;
+    margin-top: 5%;
+    /* box-shadow: 10px 4px 10px 6px var(--dark-color); */
+}
+
+.container header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 1.406vw;
+    padding: 0.108vw 4.1125vw;
+}
+
+.container header nav ul li a {
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Cardo', serif;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.container header nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(80, 79, 79);
+}
+
+#hamburger {
+    display: none;
+}
+
+.introWrapper {
+    padding: 0.108vw 4.1125vw;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10%;
+}
+
+.intro {
+    padding-right: 3.246vw;
+}
+
+.intro p {
+    color: rgb(41, 34, 34);
+    padding-right: 3.0303vw;
+    text-align: justify;
+}
+
+.pic img {
+    height: 27.5423vh;
+    width: 14.069vw;
+    border-radius: 80%;
+    border: 3px solid black;
+    box-shadow: 0px 10px 14px 2px rgb(255, 212, 234);
+}
+
+.resumeDownloadbtn button {
+    height: 4.661vh;
+    width: 8.6580vw;
+    margin: 0;
+    padding: 0;
+    background: rgb(238, 98, 98);
+    color: white;
+    font-family: 'Cardo', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2.330vh;
+    border: none;
+    transition: 0.5s;
+}
+
+.resumeDownloadbtn button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: rgb(238, 98, 98);
+    scale: 1.1;
+    box-shadow: 2px 2px 6px 3px rgb(78, 78, 78);
+}
+
+.recentWrapper {
+    height: 31.779vh;
+    width: auto;
+    position: absolute;
+    background-color: rgb(255, 212, 234);
+    padding: 0.108vw 4.1125vw;
+}
+
+.recentHeadingWrapper {
+    display: flex;
+    gap: 85%;
+}
+
+#recentHeading {
+    font-weight: normal;
+}
+
+#viewAll {
+    font-weight: normal;
+    color: rgb(31, 129, 168);
+    text-decoration: none;
+}
+
+#viewAll:hover {
+    text-decoration: underline;
+    color: rgb(116, 167, 187);
+}
+
+.recentContainerWrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 1.1904vw;
+    text-align: justify;
+}
+
+.recentContainerWrapper p {
+    color: rgb(26, 23, 23);
+}
+
+.reactHooks {
+    background-color: white;
+    padding: 0.649vw;
+}
+
+.mobileApp {
+    background-color: white;
+    padding: 0.649vw;
+}
+
+.featuredWorksWrapper {
+    height: 120.233vh;
+    width: auto;
+    position: absolute;
+    background-color: white;
+    text-align: justify;
+    padding: 1.1904vw 4.0584vw;
+    left: 0px;
+}
+
+.featuredWorksWrapper h2 {
+    font-family: 'Cardo', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+.featuredWorksWrapper img {
+    height: 24.364vh;
+    width: 24.350vw;
+    border-radius: 1.190vw;
+    box-shadow: 2px 2px 16px 4px rgb(255, 212, 234);
+}
+
+.eCommerceWrapper {
+    display: flex;
+    gap: 1.190vw;
+}
+
+.taskManagementWrapper {
+    display: flex;
+    gap: 1.190vw;
+}
+
+.weatherForecastingWrapper {
+    display: flex;
+    gap: 1.190vw;
+}
+
+.socialMediaWrapper {
+    display: flex;
+    gap: 1.190vw;
+}
+
+.contactWrapper {
+    background-color: white;
+    width: 79.39vw;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsWrapper a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.515vw;
+    padding: 0.865vw;
+}
+
+.iconsWrapper a:hover {
+    color: rgb(62, 62, 62);
+}
+
+@media screen and (max-width:480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: var(--primary-color);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+
+    .container {
+        width: 80%;
+        height: 80vh;
+        position: absolute;
+        background-color: white;
+        margin-top: 5%;
+        font-size: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container header nav ul li a{
+        font-size: 10px;
+        padding: 12px;
+    }
+
+    #hamburger {
+        display: block;
+        font-size: 22px;
+        z-index: 1;
+    }
+
+    .resumeDownloadbtn button {
+        font-size: 6px;
+        width: 65px;
+        height: 25px;
+    }
+
+    .featuredWorksWrapper {
+        height: auto;
+    }
+}
