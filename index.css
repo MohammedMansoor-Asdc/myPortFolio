@@ -98,6 +98,19 @@ body {
     box-shadow: 2px 2px 6px 3px rgb(78, 78, 78);
 }
 
+.resumeDownloadbtn button a {
+    color: rgb(48, 48, 48);
+    font-family: 'Cardo', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resumeDownloadbtn button a:hover {
+    color: rgb(238, 98, 98);
+}
+
+
 .recentWrapper {
     height: 31.779vh;
     width: auto;
@@ -242,7 +255,7 @@ body {
         flex-direction: column;
     }
 
-    .container header nav ul li a{
+    .container header nav ul li a {
         font-size: 10px;
         padding: 12px;
     }
